@@ -7,7 +7,7 @@ const Navbar = () => {
 
     const [open, setOpen] =useState(false);
     const routes = [
-        { id: 1, path: "/", name: "Home" },
+        { id: 1, path: "/home", name: "Home" },
         { id: 2, path: "/about", name: "About" },
         { id: 3, path: "/services", name: "Services" },
         { id: 4, path: "/contact", name: "Contact" },

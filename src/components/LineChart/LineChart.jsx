@@ -18,9 +18,12 @@ const LineChart = () => {
     return (
         <div>
             <LChart width={500} height={400} data={studentMarks}>
-                <Line dataKey='math'></Line>
-                <Line dataKey='physics'></Line>
-                <Line dataKey='chemistry'></Line>
+                <CartesianGrid stroke="#ccc"></CartesianGrid>
+                <XAxis></XAxis>
+                <YAxis></YAxis>
+                <Line type="monotone" dataKey={'math'} stroke='red' ></Line>
+                <Line type="monotone" dataKey={'physics'} stroke='blue' ></Line>
+                <Line type="monotone" dataKey={'chemistry'} stroke='green' ></Line>
             </LChart>
         </div>
     );
